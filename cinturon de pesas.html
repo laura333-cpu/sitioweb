@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="faja.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Inicio del menú -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <!-- Cambié el href a "proyecto11.html" -->
+                    <img src="img/logo1.jpg" alt="Logo" width="200" height="80">
+                </a>
+            </div>
+            <div class="nav-items">
+                <a href="servicios.html">Servicios</a>
+                <a href="producto.html" id="showProducts">Productos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="nav-actions">
+                <form id="searchForm" class="search-form">
+                    <input type="text" id="searchInput" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <a href="#" id="cartIcon" class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCount">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin del menú -->
+
+    <div class="container">
+        <div class="product-image">
+            <img src="Img/Cinturon para levantamiento de pesas.jpeg" alt="Camiseta De Compresion">
+            
+        </div>
+        <div class="product-details">
+            <h2>Cinturon para levantamiento de pesas</h2>
+            <p> El cinturón de levantamiento de pesas es un accesorio diseñado para proporcionar soporte adicional a la
+                zona lumbar y abdominal durante ejercicios de fuerza, especialmente en movimientos como sentadillas,
+                peso muerto y press de banca. Su función principal es estabilizar la columna vertebral y aumentar la
+                presión intraabdominal, lo que ayuda a prevenir lesiones y mejorar el rendimiento. Fabricados en
+                materiales resistentes como cuero o nylon, estos cinturones son ajustables y se adaptan al cuerpo del
+                usuario, ofreciendo comodidad y seguridad durante el levantamiento de cargas pesadas. Un buen cinturón
+                no solo contribuye a una mejor postura, sino que también permite a los levantadores maximizar su
+                potencia y eficiencia al realizar sus entrenamientos.</p>
+            <h3>Características</h3>
+            <ul>
+                <li>Material Resistente: Fabricados en cuero o nylon de alta resistencia, que garantizan durabilidad y
+                    soporte durante levantamientos pesados.</li>
+                <li>Diseño Ajustable: Vienen con hebillas o cierres de velcro que permiten un ajuste personalizado,
+                    asegurando un ajuste ceñido y cómodo que no se deslice durante el ejercicio.</li>
+                <li>Ancho y Grosor: Generalmente, estos cinturones tienen un ancho y grosor específicos (entre 4 a 6
+                    pulgadas de ancho) que brindan un soporte óptimo sin sacrificar la movilidad.</li>
+                <li>Soporte Lumbar: Diseñados específicamente para proporcionar soporte a la zona lumbar, ayudando a
+                    mantener la alineación adecuada de la columna durante los levantamientos.</li>
+            </ul>
+            <h3>Garantía</h3>
+            <p> La garantía de los cinturones para levantamiento ofrece una garantía de 1 a 3 años que cubre defectos de
+                fabricación. Es recomendable revisar las políticas específicas al momento de la compra para entender qué
+                tipo de problemas están cubiertos y seguir las instrucciones de uso y cuidado para maximizar la vida
+                útil del cinturón.</p>
+        </div>
+    </div>
+
+
+    <!-- Modal del carrito -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: <span id="cartTotal">0</span> COP</p>
+            <h3>Método de Pago</h3>
+            <form id="payment-form">
+                <label for="nequi-phone">Número de Nequi:</label>
+                <input type="text" id="nequi-phone" placeholder="Ingresa tu número de Nequi" required>
+                <button type="submit">Pagar</button>
+            </form>
+            <div id="payment-message"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://x.com/BODYFIT19946142?t=8oDmS1Cwz2d22VsPVWPBpw&s=08" target="_blank" class="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/body_fit04/profilecard/?igsh=MWswdGd4YXJrc2lpNQ==" target="_blank"
+                class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/message/KIMQYZMVAUD6I1" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

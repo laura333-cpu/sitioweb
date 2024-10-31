@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav-items a:hover {
+    text-decoration: underline;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    margin-right: 20px;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.search-form button:hover {
+    background-color: #555;
+}
+
+
+/* estilo para los botones */
+.contenedor {
+    display: flex;
+    justify-content: center; /* Centra los cuadros horizontalmente */
+    align-items: center; /* Centra los cuadros verticalmente */
+    gap: 20px; /* Espacio entre los cuadros */
+}
+
+.cuadro {
+    width: 400px; /* Aumenta el ancho del cuadro */
+    height: 300px; /* Aumenta la altura del cuadro */
+    background-color: #007BFF; /* Color de fondo del cuadro */
+    position: relative; /* Permite posicionar elementos internos */
+    overflow: hidden; /* Oculta el desbordamiento */
+    transition: width 0.5s, height 0.5s; /* Transiciones suaves para cambios de tamaño */
+}
+
+.cuadro:hover {
+    width: 400px; /* Aumenta el ancho al pasar el mouse */
+}
+
+.imagen, .imagen-nueva img {
+    width: 100%; /* Asegura que las imágenes ocupen el 100% del cuadro */
+    height: 100%; /* Asegura que las imágenes ocupen el 100% del cuadro */
+    transition: opacity 0.5s; /* Transición suave para la opacidad */
+}
+
+.imagen-nueva {
+    position: absolute; /* Posiciona la nueva imagen sobre el cuadro */
+    top: 0; /* Alinea al top */
+    left: 0; /* Alinea al left */
+    right: 0; /* Alinea al right */
+    bottom: 0; /* Alinea al bottom */
+    display: flex; /* Utiliza flexbox para centrar la nueva imagen */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.enlace {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.texto {
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrar */
+    color: white; /* Color del texto */
+    width: 100%; /* Hace que el texto ocupe el 100% del ancho */
+    text-align: center; /* Centra el texto */
+    font-size: 1em; /* Tamaño de la fuente más pequeño */
+    padding: 10px; /* Espaciado interno */
+}
+
+.texto:hover {
+    text-decoration: underline; /* Subraya el texto al pasar el mouse */
+}
+
+/* Estilos para el modal del carrito */
+.cart {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.cart i {
+    font-size: 20px;
+}
+
+.cart #cartCount {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.cart-modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Para que cubra toda la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    z-index: 9999; /* Asegúrate de que este valor sea alto */
+}
+
+.cart-modal-content {
+    background: white; /* Fondo blanco para el contenido del modal */
+    padding: 20px;
+    border-radius: 4px;
+    width: 300px;
+    position: relative;
+    z-index: 10000; /* Asegúrate de que este valor sea aún más alto */
+}
+
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.cart-modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    width: 300px;
+    position: relative;
+    z-index: 10000;
+}
+
+.cart-modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/* Estilos para el pie de página */
+
+.wrapper {
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-media {
+    margin-bottom: 10px;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+footer .social-media a.facebook {
+    color: #1877f2; 
+}
+
+footer .social-media a.twitter {
+    color: #1da1f2; 
+}
+
+footer .social-media a.instagram {
+    color: #e4405f;
+}
+
+footer .social-media a.whatsapp{
+    color: greenyellow;
+}
+
+footer .social-media a:hover {
+    color: #ddd; 
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="ropamujer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Inicio del menú -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <!-- Cambié el href a "proyecto11.html" -->
+                    <img src="img/logo1.jpg" alt="Logo" width="200" height="80">
+                </a>
+            </div>
+            <div class="nav-items">
+                <a href="servicios.html">Servicios</a>
+                <a href="producto.html" id="showProducts">Productos</a> <!-- Botón para mostrar productos -->
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="nav-actions">
+                <form id="searchForm" class="search-form">
+                    <input type="text" id="searchInput" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <a href="#" id="cartIcon" class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCount">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin del menú -->
+
+
+    <!-- Contenido principal -->
+    <main>
+        <div class="wrapper">
+            <div id="productContainer" class="product-container" style>
+                <!-- Productos -->
+                <div class="product" data-id="1" data-name="Camisetas de manga corta" data-price="20">
+                    <a href="CMmangacorta.html" class="product-link">
+                        <!-- Cambia "pagina-destino.html" por la URL que desees -->
+                        <h2>Camisetas de manga corta</h2>
+                        <img src="Img/camisa manga corta.jpeg" alt="">
+                        <p>Precio: 30.000 cop </p>
+                    </a>
+                    <label for="color-1">Color:</label>
+                    <select id="color-1">
+                        <option value="rojo">Rojo</option>
+                        <option value="azul">Azul</option>
+                        <option value="verde">Verde</option>
+                    </select>
+                    <label for="size-1">Talla:</label>
+                    <select id="size-1">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+
+
+                <div class="product" data-id="2" data-name="Camisetas de manga larga" data-price="20">
+                    <a href="CMmangalarga.html" class="product-link">
+                        <!-- Cambia "pagina-destino-2.html" por la URL que desees -->
+                        <h2>Camisetas de manga larga</h2>
+                        <img src="Img/camisa manga larga.jpeg" alt="">
+                        <p>Precio: 40.000 cop</p>
+                    </a>
+                    <label for="color-2">Color:</label>
+                    <select id="color-2">
+                        <option value="negro">Negro</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="gris">Gris</option>
+                    </select>
+                    <label for="size-2">Talla:</label>
+                    <select id="size-2">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+
+                <div class="product" data-id="3" data-name="Camisa Esqueleto" data-price="20">
+                    <a href="CMesqueleto.html" class="product-link">
+                        <!-- Cambia "pagina-destino-3.html" por la URL que desees -->
+                        <h2>Camisa Esqueleto</h2>
+                        <img src="Img/camisas esqueleto.jpeg" alt="">
+                        <p>Precio: 25.000 cop</p>
+                    </a>
+                    <label for="color-3">Color:</label>
+                    <select id="color-3">
+                        <option value="negro">Negro</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="colorido">Colorido</option>
+                    </select>
+                    <label for="size-3">Talla:</label>
+                    <select id="size-3">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+
+                <div class="product" data-id="4" data-name="Crop Top con Mangas" data-price="20">
+                    <a href="CTMconmangas.html" class="product-link">
+                        <!-- Cambia "pagina-destino-4.html" por la URL que desees -->
+                        <h2>Crop Top con Mangas</h2>
+                        <img src="Img/camisa manga corta.png" alt="">
+                        <p>Precio: 32.000 cop</p>
+                    </a>
+                    <label for="color-4">Color:</label>
+                    <select id="color-4">
+                        <option value="rosa">Rosa</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="negro">Negro</option>
+                    </select>
+                    <label for="size-4">Talla:</label>
+                    <select id="size-4">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+
+                <div class="product" data-id="5" data-name="Crop Top sin Mangas" data-price="20">
+                    <a href="CTMsinmangas.html" class="product-link">
+                        <!-- Cambia "pagina-destino-5.html" por la URL que desees -->
+                        <h2>Crop Top sin Mangas</h2>
+                        <img src="Img/top sin manga.jpeg" alt="">
+                        <p>Precio: 22.000 cop</p>
+                    </a>
+                    <label for="color-5">Color:</label>
+                    <select id="color-5">
+                        <option value="azul">Azul</option>
+                        <option value="morado">Morado</option>
+                        <option value="negro">Negro</option>
+                    </select>
+                    <label for="size-5">Talla:</label>
+                    <select id="size-5">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+
+                <div class="product" data-id="6" data-name="Crop Top Manga Larga" data-price="20">
+                    <a href="CTMmangalarga.html" class="product-link">
+                        <!-- Cambia "pagina-destino-6.html" por la URL que desees -->
+                        <h2>Crop Top Manga Larga</h2>
+                        <img src="Img/top manga larga.jpeg" alt="">
+                        <p>Precio: 20.000 cop</p>
+                    </a>
+                    <label for="color-6">Color:</label>
+                    <select id="color-6">
+                        <option value="gris">Gris</option>
+                        <option value="negro">Negro</option>
+                        <option value="blanco">Blanco</option>
+                    </select>
+                    <label for="size-6">Talla:</label>
+                    <select id="size-6">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+
+                <div class="product" data-id="6" data-name="leggings push up" data-price="20">
+                    <a href="LMpushup.html" class="product-link">
+                        <!-- Cambia "pagina-destino-leggings.html" por la URL que desees -->
+                        <h2>Leggings push up</h2>
+                        <img src="Img/Leggings en Push Up.jpeg" alt="">
+                        <p>Precio: 60.000 cop</p>
+                    </a>
+                    <label for="color-6">Color:</label>
+                    <select id="color-6">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <label for="size-6">Talla:</label>
+                    <select id="size-6">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+
+                <div class="product" data-id="7" data-name="Leggings En Suplex" data-price="20">
+                    <a href="LMensuplex.html" class="product-link">
+                        <!-- Cambia "pagina-destino-short.html" por la URL que desees -->
+                        <h2>Short push up</h2>
+                        <img src="Img/Leggings En Suplex.jpeg" alt="">
+                        <p>Precio: 40.000 cop</p>
+                    </a>
+                    <label for="color-7">Color:</label>
+                    <select id="color-7">
+                        <option value="negro">Negro</option>
+                        <option value="azul">Azul</option>
+                        <option value="rojo">Rojo</option>
+                    </select>
+                    <label for="size-7">Talla:</label>
+                    <select id="size-7">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+
+                <div class="product" data-id="8" data-name="Short En Suplex" data-price="20">
+                    <a href="SMensuplex.html" class="product-link">
+                        <h2>Short En Suplex</h2>
+                        <img src="Img/Short En Suplex.jpeg" alt="">
+                        <p>Precio: 32.000 cop</p>
+                    </a>
+                    <label for="color-8">Color:</label>
+                    <select id="color-8">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="colorido">Colorido</option>
+                    </select>
+                    <label for="size-8">Talla:</label>
+                    <select id="size-8">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="9" data-name="short push up" data-price="20">
+                    <a href="SMpushup.html" class="product-link">
+                        <h2>Short push up</h2>
+                        <img src="Img/short push up.jpeg" alt="">
+                        <p>Descripción del Producto 9</p>
+                        <p>Precio: 45.000 cop</p>
+                    </a>
+                    <label for="color-9">Color:</label>
+                    <select id="color-9">
+                        <option value="negro">Negro</option>
+                        <option value="morado">Morado</option>
+                        <option value="rosa">Rosa</option>
+                    </select>
+                    <label for="size-9">Talla:</label>
+                    <select id="size-9">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="10" data-name="short corte en v atras" data-price="20">
+                    <a href="SMcortev.html" class="product-link">
+                        <h2>Short corte en v atrás</h2>
+                        <img src="Img/short corte en cintura v atras.jpeg" alt="">
+                        <p>Precio: 50.000 cop</p>
+                    </a>
+                    <label for="color-10">Color:</label>
+                    <select id="color-10">
+                        <option value="negro">Negro</option>
+                        <option value="beige">Beige</option>
+                        <option value="rojo">Rojo</option>
+                    </select>
+                    <label for="size-10">Talla:</label>
+                    <select id="size-10">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="11" data-name="Short Nike" data-price="20">
+                    <a href="SMnike.html" class="product-link">
+                        <h2>Short Nike</h2>
+                        <img src="Img/Short Nike.jpeg" alt="">
+                        <p>Precio: 36.000 cop</p>
+                    </a>
+                    <label for="color-11">Color:</label>
+                    <select id="color-11">
+                        <option value="negro">Negro</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <label for="size-11">Talla:</label>
+                    <select id="size-11">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="12" data-name="Short Barely Worn Nike" data-price="20">
+                    <a href="SMbarely.html" class="product-link">
+                        <h2>Short Barely Worn Nike</h2>
+                        <img src="Img/Short Barely Worn Nike.jpg" alt="">
+                        <p>Precio: 45.000 cop</p>
+                    </a>
+                    <label for="color-12">Color:</label>
+                    <select id="color-12">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="colorido">Colorido</option>
+                    </select>
+                    <label for="size-12">Talla:</label>
+                    <select id="size-12">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="13" data-name="Short Falda" data-price="20">
+                    <a href="SMfalda.html" class="product-link">
+                        <h2>Short Falda</h2>
+                        <img src="Img/Short Falda.webp" alt="">
+                        <p>Precio: 45.000 cop</p>
+                    </a>
+                    <label for="color-13">Color:</label>
+                    <select id="color-13">
+                        <option value="negro">Negro</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <label for="size-13">Talla:</label>
+                    <select id="size-13">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="14" data-name="Conjunto" data-price="20">
+                    <a href="Mconjunto.html" class="product-link">
+                        <h2>Conjunto</h2>
+                        <img src="Img/Conjunto.webp" alt="">
+                        <p>Precio:70.000 cop</p>
+                    </a>
+                    <label for="color-14">Color:</label>
+                    <select id="color-14">
+                        <option value="negro">Negro</option>
+                        <option value="beige">Beige</option>
+                        <option value="colorido">Colorido</option>
+                    </select>
+                    <label for="size-14">Talla:</label>
+                    <select id="size-14">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Fin del contenido principal -->
+
+    <!-- Modal del carrito -->
+    <!-- Modal del carrito -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: <span id="cartTotal">0</span> COP</p>
+            <h3>Método de Pago</h3>
+            <form id="payment-form">
+                <label for="nequi-phone">Número de Nequi:</label>
+                <input type="text" id="nequi-phone" placeholder="Ingresa tu número de Nequi" required>
+                <button type="submit">Pagar</button>
+            </form>
+            <div id="payment-message"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://x.com/BODYFIT19946142?t=8oDmS1Cwz2d22VsPVWPBpw&s=08" target="_blank" class="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/body_fit04/profilecard/?igsh=MWswdGd4YXJrc2lpNQ==" target="_blank"
+                class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/message/KIMQYZMVAUD6I1" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Incluye el archivo JavaScript al final del documento -->
+    <script src="script.js"></script>
+</body>
+
+</html>

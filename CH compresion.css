@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav-items a:hover {
+    text-decoration: underline;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    margin-right: 20px;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.search-form button:hover {
+    background-color: #555;
+}
+
+/* Estilos para el modal del carrito */
+.cart {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.cart i {
+    font-size: 20px;
+}
+
+.cart #cartCount {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+/* Estilos para el modal del carrito */
+.cart {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.cart i {
+    font-size: 20px;
+}
+
+.cart #cartCount {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.cart-modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Para que cubra toda la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    z-index: 9999; /* Asegúrate de que este valor sea alto */
+}
+
+.cart-modal-content {
+    background: white; /* Fondo blanco para el contenido del modal */
+    padding: 20px;
+    border-radius: 4px;
+    width: 300px;
+    position: relative;
+    z-index: 10000; /* Asegúrate de que este valor sea aún más alto */
+}
+
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.cart-modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    width: 300px;
+    position: relative;
+    z-index: 10000;
+}
+
+.cart-modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.container {
+    display: flex; /* Crea un contenedor flexible */
+    margin: 20px; /* Margen del contenedor */
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los productos se muevan a la siguiente línea */
+    gap: 20px; /* Espaciado entre los productos */
+}
+
+.product {
+    flex: 1 1 calc(30% - 20px); /* Tres productos por fila, menos el espacio entre ellos */
+    display: flex;
+    flex-direction: column; /* Coloca el contenido en columna */
+    justify-content: space-between; /* Asegura que el contenido ocupe el espacio disponible */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px; /* Espaciado interno */
+    min-height: 300px; /* Altura mínima para los cuadros */
+}
+
+.product img {
+    width: 100%; /* Ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+}
+
+.size-color {
+    margin-top: 10px; /* Margen superior */
+}
+
+.size-color label {
+    margin-right: 10px; /* Espaciado a la derecha de las etiquetas */
+}
+
+.add-to-cart {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Espaciado del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+h3 {
+    margin-top: 20px; /* Margen superior para los encabezados de características y garantía */
+}
+
+/* Estilos para el pie de página */
+.wrapper {
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-media {
+    margin-bottom: 10px;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+footer .social-media a.facebook {
+    color: #1877f2; 
+}
+
+footer .social-media a.twitter {
+    color: #1da1f2; 
+}
+
+footer .social-media a.instagram {
+    color: #e4405f;
+}
+
+footer .social-media a.whatsapp {
+    color: greenyellow;
+}
+
+footer .social-media a:hover {
+    color: #ddd; 
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

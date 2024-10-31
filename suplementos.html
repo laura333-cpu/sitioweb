@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="suplementos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Inicio del menú -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <!-- Cambié el href a "proyecto11.html" -->
+                    <img src="img/logo1.jpg" alt="Logo" width="200" height="80">
+                </a>
+            </div>
+            <div class="nav-items">
+                <a href="servicios.html">Servicios</a>
+                <a href="producto.html" id="showProducts">Productos</a> <!-- Botón para mostrar productos -->
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="nav-actions">
+                <form id="searchForm" class="search-form">
+                    <input type="text" id="searchInput" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <a href="#" id="cartIcon" class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCount">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin del menú -->
+
+    <!-- Contenido principal -->
+    <main>
+        <div class="wrapper">
+            <div id="productContainer" class="product-container" style>
+                <!-- Productos se mostrarán aquí -->
+                <div class="product" data-id="1" data-name="Creatina Optimum Nutrition" data-price="20">
+                    <a href="Creatina_Optimum_Nutrition.html" class="product-link">
+                        <h2>Creatina Optimum Nutrition</h2>
+                        <img src="Img/Optimum Nutrition.jpeg" alt="">
+                        <p>Precio: 70.000 cop</p>
+                    </a>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="2" data-name="Creatina MuscleTech" data-price="20">
+                    <a href="Creatina_MuscleTech.html" class="product-link">
+                        <h2>Creatina MuscleTech</h2>
+                        <img src="Img/creatina MuscleTech.avif" alt="">
+                        <p>Precio: 50.000 cop</p>
+                    </a>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="3" data-name="Creatina BSN" data-price="20">
+                    <a href="Creatina_BSN.html" class="product-link">
+                        <h2>Creatina BSN</h2>
+                        <img src="Img/creatina BSN.jpeg" alt="">
+                        <p>Precio: 40.000 cop</p>
+                    </a>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="4" data-name="Creatina Cellucor" data-price="20">
+                    <a href="Creatina_Cellucor.html" class="product-link">
+                        <h2>Creatina Cellucor</h2>
+                        <img src="Img/creatina Cellucor.jpeg" alt="">
+                        <p>Precio:55.000 cop </p>
+                    </a>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="5" data-name="Creatina Kaged Muscle" data-price="20">
+                    <a href="Creatina_Kaged_Muscle.html" class="product-link">
+                        <h2>Creatina Kaged Muscle</h2>
+                        <img src="Img/creatina Kaged Muscle.jpeg" alt="">
+                        <p>Precio:60.000 cop</p>
+                    </a>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="6" data-name="Creatina MyProtein" data-price="20">
+                    <a href="Creatina_MyProtein.html" class="product-link">
+                        <h2>Creatina MyProtein</h2>
+                        <img src="Img/creatina MyProtein.jpeg" alt="">
+                        <p>Precio:80.000 cop</p>
+                    </a>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="7" data-name="Creatina Dymatize" data-price="20">
+                    <a href="Creatina_Dymatize.html" class="product-link">
+                        <h2>Creatina Dymatize</h2>
+                        <img src="Img/creatina Dymatize.jpeg" alt="">
+                        <p>Precio: 45.000 cop</p>
+                    </a>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="8" data-name="Creatina Bulk Powders" data-price="20">
+                    <a href="Creatina_Bulk_Powders.html" class="product-link">
+                        <h2>Creatina Bulk Powders</h2>
+                        <img src="Img/creatina Bulk Powders.webp" alt="">
+                        <p>Precio:75.000 cop</p>
+                    </a>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="9" data-name="Proteina Amfit Nutrition" data-price="20">
+                    <a href="Proteina_Amfit_Nutrition.html" class="product-link">
+                        <h2>Proteina Amfit Nutrition</h2>
+                        <img src="Img/proteina Amfit.webp" alt="">
+                        <p>Precio:110.000 cop</p>
+                    </a>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="10" data-name="Proteina Gold Standard Whey" data-price="20">
+                    <a href="Proteina_Gold_Standard_Whey.html" class="product-link">
+                        <h2>Proteina Gold Standard Whey</h2>
+                        <img src="Img/proteina Gold Standard Whey.jpeg" alt="">
+                        <p>Precio: 140.000 cop</p>
+                    </a>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="11" data-name="Proteina Syntha-6" data-price="20">
+                    <a href="Proteina_Syntha-6.html" class="product-link">
+                        <h2>Proteina Syntha-6</h2>
+                        <img src="Img/proteina Syntha-6.jpeg" alt="">
+                        <p>Precio:100.000 cop</p>
+                    </a>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <!-- Fin del contenido principal -->
+
+
+    <br>
+    <!-- Modal del carrito -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: <span id="cartTotal">0</span> COP</p>
+            <h3>Método de Pago</h3>
+            <form id="payment-form">
+                <label for="nequi-phone">Número de Nequi:</label>
+                <input type="text" id="nequi-phone" placeholder="Ingresa tu número de Nequi" required>
+                <button type="submit">Pagar</button>
+            </form>
+            <div id="payment-message"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://x.com/BODYFIT19946142?t=8oDmS1Cwz2d22VsPVWPBpw&s=08" target="_blank" class="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/body_fit04/profilecard/?igsh=MWswdGd4YXJrc2lpNQ==" target="_blank"
+                class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/message/KIMQYZMVAUD6I1" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>s
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Incluye el archivo JavaScript al final del documento -->
+    <script src="script.js"></script>
+</body>
+
+</html>

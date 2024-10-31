@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="faja.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Inicio del menú -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <!-- Cambié el href a "proyecto11.html" -->
+                    <img src="img/logo1.jpg" alt="Logo" width="200" height="80">
+                </a>
+            </div>
+            <div class="nav-items">
+                <a href="servicios.html">Servicios</a>
+                <a href="producto.html" id="showProducts">Productos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="nav-actions">
+                <form id="searchForm" class="search-form">
+                    <input type="text" id="searchInput" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <a href="#" id="cartIcon" class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCount">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin del menú -->
+
+    <div class="container">
+        <div class="product-image">
+            <img src="Img/faja.jpeg" alt="Camiseta De Compresion">
+           
+        </div>
+        <div class="product-details">
+            <h2>Faja De Compresion</h2>
+            <p> La faja de compresión es un accesorio diseñado para proporcionar soporte y estabilidad en la zona
+                abdominal y lumbar. Ideal para la recuperación postquirúrgica, el uso deportivo o diario, mejora la
+                postura y alivia la tensión muscular. Confeccionada con materiales elásticos y transpirables, permite
+                una adecuada circulación de aire, manteniendo la piel fresca. Su diseño ergonómico se adapta al cuerpo,
+                ofreciendo libertad de movimiento y un ajuste personalizable para maximizar el confort y la efectividad.
+            </p>
+            <h3>Características</h3>
+            <ul>
+                <li>Material Transpirable: Tejidos que permiten la ventilación y mantienen la piel seca.</li>
+                <li>Ajustable: Sistemas de cierre que permiten un ajuste personalizado para diferentes tamaños.</li>
+                <li>Compresión Estratégica: Favorece la circulación sanguínea y reduce la inflamación.</li>
+                <li>Diseño Ergonómico: Se adapta a la anatomía del cuerpo, garantizando libertad de movimiento.</li>
+            </ul>
+            <h3>Garantía</h3>
+            <p> La garantía de la faja de compresión oscila entre 6 meses y 1 año. Esta garantía cubre defectos de
+                fabricación y asegura que el cliente reciba un producto de calidad. Para aprovechar la garantía, es
+                importante conservar el comprobante de compra y seguir las instrucciones de cuidado y uso que
+                proporciona el fabricante.</p>
+        </div>
+    </div>
+
+
+    <!-- Modal del carrito -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: <span id="cartTotal">0</span> COP</p>
+            <h3>Método de Pago</h3>
+            <form id="payment-form">
+                <label for="nequi-phone">Número de Nequi:</label>
+                <input type="text" id="nequi-phone" placeholder="Ingresa tu número de Nequi" required>
+                <button type="submit">Pagar</button>
+            </form>
+            <div id="payment-message"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://x.com/BODYFIT19946142?t=8oDmS1Cwz2d22VsPVWPBpw&s=08" target="_blank" class="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/body_fit04/profilecard/?igsh=MWswdGd4YXJrc2lpNQ==" target="_blank"
+                class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/message/KIMQYZMVAUD6I1" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

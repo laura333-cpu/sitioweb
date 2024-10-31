@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="accesorios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Inicio del menú -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <!-- Cambié el href a "proyecto11.html" -->
+                    <img src="img/logo1.jpg" alt="Logo" width="200" height="80">
+                </a>
+            </div>
+            <div class="nav-items">
+                <a href="servicios.html">Servicios</a>
+                <a href="producto.html" id="showProducts">Productos</a> <!-- Botón para mostrar productos -->
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="nav-actions">
+                <form id="searchForm" class="search-form">
+                    <input type="text" id="searchInput" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <a href="#" id="cartIcon" class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCount">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin del menú -->
+
+    <!-- Contenido principal -->
+    <main>
+        <div class="wrapper">
+            <div id="productContainer" class="product-container" style>
+
+                <!-- Ejemplo de productos -->
+                <div class="product" data-id="1" data-name="Faja de compresión" data-price="20">
+                    <a href="faja.html" class="product-link">
+                        <h2>Faja de compresión</h2>
+                        <img src="Img/faja.jpeg" alt="">
+                        <p>Precio: 50.000 cop</p>
+                    </a>
+                    <label for="color-2">Color:</label>
+                    <select id="color-2">
+                        <option value="negro">Negro</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="2" data-name="Cinturon de soporte lumbar" data-price="20">
+                    <a href="cinturon.html" class="product-link">
+                        <h2>Cinturón de soporte lumbar</h2>
+                        <img src="Img/Cinturon de soporte lumbar.jpeg" alt="">
+                        <p>Precio: 65.000 cop</p>
+                    </a>
+                    <label for="color-3">Color:</label>
+                    <select id="color-3">
+                        <option value="negro">Negro</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="3" data-name="Cinturon de Levantamiento De Pesas" data-price="20">
+                    <a href="cinturon de pesas.html" class="product-link">
+                        <h2>Cinturon de Levantamiento De Pesas</h2>
+                        <img src="Img/Cinturon para levantamiento de pesas.jpeg" alt="">
+                        <p>Precio: 60.000 cop</p>
+                    </a>
+                    <label for="color-3">Color:</label>
+                    <select id="color-3">
+                        <option value="negro">Negro</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+
+                <div class="product" data-id="4" data-name="Muñequeras" data-price="20">
+                    <a href="muñequeras.html" class="product-link">
+                        <h2>Muñequeras</h2>
+                        <img src="Img/Muñequeras.jpeg" alt="">
+                        <p>Precio: 15.000 cop</p>
+                    </a>
+                    <label for="color-5">Color:</label>
+                    <select id="color-5">
+                        <option value="negro">Negro</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="5" data-name="Tobilleras" data-price="20">
+                    <a href="tobilleras.html" class="product-link">
+                        <h2>Tobilleras</h2>
+                        <img src="Img/Tobilleras.jpeg" alt="">
+                        <p>Precio: 15.000 cop</p>
+                    </a>
+                    <label for="color-6">Color:</label>
+                    <select id="color-6">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="rojo">Rojo</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="6" data-name="Rodilleras" data-price="20">
+                    <a href="rodilleras.html" class="product-link">
+                        <h2>Rodilleras</h2>
+                        <img src="Img/rodilleras.jpeg" alt="">
+                        <p>Precio: 30.000 cop</p>
+                    </a>
+                    <label for="color-7">Color:</label>
+                    <select id="color-7">
+                        <option value="negro">Negro</option>
+                        <option value="azul">Azul</option>
+                        <option value="rojo">Rojo</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="7" data-name="Esteras para yoga" data-price="20">
+                    <a href="esteras.html" class="product-link">
+                        <h2>Esteras para yoga</h2>
+                        <img src="Img/Esteras para yoga.jpeg" alt="">
+                        <p>Precio: 28.000 cop</p>
+                    </a>
+                    <label for="color-8">Color:</label>
+                    <select id="color-8">
+                        <option value="verde">Verde</option>
+                        <option value="rosado">Rosado</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="8" data-name="Colchonetas de ejercicio" data-price="20">
+                    <a href="colchonetas.html" class="product-link">
+                        <h2>Colchonetas de ejercicio</h2>
+                        <img src="Img/Colchonetas de ejercicio.jpeg" alt="">
+                        <p>Precio:30.000 cop</p>
+                    </a>
+                    <label for="color-9">Color:</label>
+                    <select id="color-9">
+                        <option value="gris">Gris</option>
+                        <option value="negro">Negro</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="9" data-name="Botellas de agua" data-price="20">
+                    <a href="botellas.html" class="product-link">
+                        <h2>Botellas de agua</h2>
+                        <img src="Img/botella de agua.jpeg" alt="">
+                        <p>Precio: 50.000 cop</p>
+                    </a>
+                    <label for="color-9">Color:</label>
+                    <select id="color-9">
+                        <option value="transparente">Transparente</option>
+                        <option value="azul">Azul</option>
+                        <option value="verde">Verde</option>
+                    </select>
+                    <label for="size-9">Litros:</label>
+                    <select id="size-9">
+                        <option value="500ml">500ml</option>
+                        <option value="1L">1L</option>
+                        <option value="2L">2L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="10" data-name="Termos para bebidas frías o calientes" data-price="20">
+                    <a href="termos.html" class="product-link">
+                        <h2>Termos para bebidas frías o calientes</h2>
+                        <img src="Img/Termos para bebidas frías o calientes.jpeg" alt="">
+                        <p>Precio: 50.000 cop</p>
+                    </a>
+                    <label for="color-10">Color:</label>
+                    <select id="color-10">
+                        <option value="negro">Negro</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <label for="size-10">Litros:</label>
+                    <select id="size-10">
+                        <option value="500ml">500ml</option>
+                        <option value="1L">1L</option>
+                        <option value="2L">2L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="11" data-name="Auriculares inalámbricos" data-price="20">
+                    <a href="auriculares.html" class="product-link">
+                        <h2>Auriculares inalámbricos</h2>
+                        <img src="Img/Auriculares inalámbricos.jpeg" alt="">
+                        <p>Precio: 200.000 cop</p>
+                    </a>
+                    <label for="color-11">Color:</label>
+                    <select id="color-11">
+                        <option value="negro">Negro</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="rojo">Gris</option>
+                    </select>
+                    <label for="size-11">Talla:</label>
+                    <select id="size-11">
+                        <option value="standard">Estándar</option>
+                        <option value="compacto">Compacto</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="12" data-name="Cuerdas para saltar" data-price="20">
+                    <a href="cuerdas.html" class="product-link">
+                        <h2>Cuerdas para saltar</h2>
+                        <img src="Img/Cuerdas para saltar.jpeg" alt="">
+                        <p>Precio: 10.000 cop</p>
+                    </a>
+                    <label for="color-12">Color:</label>
+                    <select id="color-12">
+                        <option value="negro">Negro</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <label for="size-12">Talla:</label>
+                    <select id="size-12">
+                        <option value="standard">Estándar</option>
+                        <option value="ajustable">Ajustable</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+
+                <div class="product" data-id="13" data-name="Tiras de suspensión" data-price="20">
+                    <a href="tiras.html" class="product-link">
+                        <h2>Tiras de suspensión</h2>
+                        <img src="Img/Tiras de suspensión.jpeg" alt="">
+                        <p>Precio: 15.000 cop</p>
+                    </a>
+                    <label for="color-13">Color:</label>
+                    <select id="color-13">
+                        <option value="amarillo">Amarillo</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="negro">Negro</option>
+                    </select>
+                    <label for="size-13">Talla:</label>
+                    <select id="size-13">
+                        <option value="standard">Estándar</option>
+                        <option value="ajustable">Ajustable</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="14" data-name="Rodillos de espuma para masajes y recuperación"
+                    data-price="20">
+                    <a href="rodillos.html" class="product-link">
+                        <h2>Rodillos de espuma para masajes y recuperación</h2>
+                        <img src="Img/Rodillos de espuma para masajes y recuperación.jpeg" alt="">
+                        <p>Precio: 20.000 cop</p>
+                    </a>
+                    <label for="color-14">Color:</label>
+                    <select id="color-14">
+                        <option value="azul">Azul</option>
+                        <option value="verde">Verde</option>
+                        <option value="negro">Negro</option>
+                    </select>
+                    <label for="size-14">Tamaño:</label>
+                    <select id="size-14">
+                        <option value="pequeño">Pequeño</option>
+                        <option value="grande">Grande</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="15" data-name="Plantillas ortopédicas" data-price="20">
+                    <a href="plantillas.html" class="product-link">
+                        <h2>Plantillas ortopédicas</h2>
+                        <img src="Img/Plantillas ortopédicas.jpeg" alt="">
+                        <p>Precio: 15.000 cop</p>
+                    </a>
+                    <label for="color-15">Color:</label>
+                    <select id="color-15">
+                        <option value="beige">Beige</option>
+                        <option value="negro">Negro</option>
+                    </select>
+                    <label for="size-15">Talla:</label>
+                    <select id="size-15">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="16" data-name="Calcetines de compresión" data-price="20">
+                    <a href="calcetines.html" class="product-link">
+                        <h2>Calcetines de compresión</h2>
+                        <img src="Img/Calcetines de compresión.jpeg" alt="">
+                        <p>Precio: 20.000 cop</p>
+                    </a>
+                    <label for="color-16">Color:</label>
+                    <select id="color-16">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="blanco">Blanco</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="17" data-name="Balones medicinales" data-price="20">
+                    <a href="balones.html" class="product-link">
+                        <h2>Balones medicinales</h2>
+                        <img src="Img/Balones medicinales.jpeg" alt="">
+                        <p>Precio: 40.000 cop</p>
+                    </a>
+                    <label for="color-17">Color:</label>
+                    <select id="color-17">
+                        <option value="rojo">Rojo</option>
+                        <option value="azul">Azul</option>
+                        <option value="verde">Verde</option>
+                    </select>
+                    <label for="size-17">Peso:</label>
+                    <select id="size-17">
+                        <option value="1kg">1kg</option>
+                        <option value="2kg">2kg</option>
+                        <option value="3kg">3kg</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="18" data-name="Codilleras" data-price="20">
+                    <a href="codilleras.html" class="product-link">
+                        <h2>Codilleras</h2>
+                        <img src="Img/Codilleras.jpeg" alt="">
+                        <p>Precio: 35.000 cop</p>
+                    </a>
+                    <label for="color-18">Color:</label>
+                    <select id="color-18">
+                        <option value="negro">Negro</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+
+                <div class="product" data-id="19" data-name="Straps" data-price="20">
+                    <a href="straps.html" class="product-link">
+                        <h2>Straps</h2>
+                        <img src="Img/Straps.jpeg" alt="">
+                        <p>Precio: 35.000 cop</p>
+                    </a>
+                    <label for="color-19">Color:</label>
+                    <select id="color-19">
+                        <option value="negro">Negro</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+                <div class="product" data-id="20" data-name="Monitores de frecuencia cardíaca" data-price="20">
+                    <a href="monitores.html" class="product-link">
+                        <h2>Monitores de frecuencia cardíaca</h2>
+                        <img src="Img/Monitores de frecuencia cardíaca.jpeg" alt="">
+                        <p>Precio: 70.000 cop</p>
+                    </a>
+                    <label for="color-20">Color:</label>
+                    <select id="color-20">
+                        <option value="negro">Negro</option>
+                        <option value="blanco">Blanco</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <!-- Fin del contenido principal -->
+
+    <!-- Modal del carrito -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: <span id="cartTotal">0</span> COP</p>
+            <h3>Método de Pago</h3>
+            <form id="payment-form">
+                <label for="nequi-phone">Número de Nequi:</label>
+                <input type="text" id="nequi-phone" placeholder="Ingresa tu número de Nequi" required>
+                <button type="submit">Pagar</button>
+            </form>
+            <div id="payment-message"></div>
+        </div>
+    </div>
+
+    <br>
+    <!-- Inicio de pie de página -->
+    <footer>
+        <div class="social-media">
+            <a href="https://x.com/BODYFIT19946142?t=8oDmS1Cwz2d22VsPVWPBpw&s=08" target="_blank" class="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/body_fit04/profilecard/?igsh=MWswdGd4YXJrc2lpNQ==" target="_blank"
+                class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/message/KIMQYZMVAUD6I1" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Fin de pie de página -->
+
+    <!-- Incluye el archivo JavaScript al final del documento -->
+    <script src="script.js"></script>
+</body>
+
+</html>

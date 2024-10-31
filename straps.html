@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="faja.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Inicio del menú -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <!-- Cambié el href a "proyecto11.html" -->
+                    <img src="img/logo1.jpg" alt="Logo" width="200" height="80">
+                </a>
+            </div>
+            <div class="nav-items">
+                <a href="servicios.html">Servicios</a>
+                <a href="producto.html" id="showProducts">Productos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="nav-actions">
+                <form id="searchForm" class="search-form">
+                    <input type="text" id="searchInput" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <a href="#" id="cartIcon" class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCount">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin del menú -->
+
+    <div class="container">
+        <div class="product-image">
+            <img src="Img/Straps.jpeg" alt="Camiseta De Compresion">
+            
+        </div>
+        <div class="product-details">
+            <h2>Straps</h2>
+            <p> Los straps deportivos son accesorios versátiles y esenciales para una amplia gama de actividades
+                físicas, diseñados para proporcionar soporte, comodidad y un mejor agarre durante el entrenamiento.
+                Fabricados con materiales de alta calidad, estos straps pueden ser utilizados en diversas disciplinas,
+                desde el levantamiento de pesas hasta el yoga y el entrenamiento funcional. Su diseño ergonómico se
+                adapta a la forma del cuerpo, asegurando una sujeción adecuada y reduciendo el riesgo de lesiones.
+                Además, son ligeros y fáciles de transportar, lo que los convierte en un compañero ideal para el
+                gimnasio o el entrenamiento al aire libre.</p>
+            <h3>Características</h3>
+            <ul>
+                <li>Material Resistente: Generalmente fabricados de tejidos duraderos como neopreno o nylon, los straps
+                    son capaces de soportar el desgaste del uso frecuente y son resistentes al agua y a la abrasión.
+                </li>
+                <li>Diseño Ergonómico: Su forma y estructura están diseñadas para adaptarse a la anatomía del cuerpo,
+                    proporcionando una sujeción segura y cómoda que no limita el rango de movimiento.</li>
+                <li>Versatilidad: Pueden ser utilizados en una amplia variedad de ejercicios, desde levantamiento de
+                    pesas hasta estiramientos, haciéndolos adecuados tanto para principiantes como para atletas
+                    avanzados.</li>
+                <li>Fácil Ajuste: Muchos modelos incluyen sistemas de cierre ajustables, lo que permite una
+                    personalización rápida y sencilla para adaptarse a diferentes tamaños y preferencias de uso.</li>
+            </ul>
+            <h3>Garantía</h3>
+            <p>Los straps deportivos cuentan con una garantía de calidad que es de 1 a 3 años. Esta garantía
+                generalmente cubre defectos de fabricación y garantiza la satisfacción del cliente, permitiendo un
+                reemplazo o reembolso si el producto no cumple con las expectativas. Además, muchos fabricantes ofrecen
+                soporte al cliente para resolver cualquier duda o problema relacionado con el uso del producto.</p>
+        </div>
+    </div>
+
+
+    <!-- Modal del carrito -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: <span id="cartTotal">0</span> COP</p>
+            <h3>Método de Pago</h3>
+            <form id="payment-form">
+                <label for="nequi-phone">Número de Nequi:</label>
+                <input type="text" id="nequi-phone" placeholder="Ingresa tu número de Nequi" required>
+                <button type="submit">Pagar</button>
+            </form>
+            <div id="payment-message"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://x.com/BODYFIT19946142?t=8oDmS1Cwz2d22VsPVWPBpw&s=08" target="_blank" class="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/body_fit04/profilecard/?igsh=MWswdGd4YXJrc2lpNQ==" target="_blank"
+                class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/message/KIMQYZMVAUD6I1" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="faja.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Inicio del menú -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <!-- Cambié el href a "proyecto11.html" -->
+                    <img src="img/logo1.jpg" alt="Logo" width="200" height="80">
+                </a>
+            </div>
+            <div class="nav-items">
+                <a href="servicios.html">Servicios</a>
+                <a href="producto.html" id="showProducts">Productos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="nav-actions">
+                <form id="searchForm" class="search-form">
+                    <input type="text" id="searchInput" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <a href="#" id="cartIcon" class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCount">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin del menú -->
+
+    <div class="container">
+        <div class="product-image">
+            <img src="Img/Termos para bebidas frías o calientes.jpeg" alt="Camiseta De Compresion">
+            
+        </div>
+        <div class="product-details">
+            <h2>Termos para bebidas frías o calientes</h2>
+            <p> Los termos son recipientes diseñados para mantener la temperatura de las bebidas, ya sea frías o
+                calientes, durante períodos prolongados. Utilizan tecnología de aislamiento, generalmente al vacío, para
+                minimizar la transferencia de calor y mantener las bebidas en la temperatura deseada. Ideales para
+                llevar café, té, agua fría o cualquier otra bebida, los termos son perfectos para actividades al aire
+                libre, viajes, el trabajo o simplemente para disfrutar de una bebida caliente en casa. Su diseño robusto
+                y portátil los convierte en una opción práctica y funcional para quienes buscan comodidad y calidad en
+                la hidratación.</p>
+            <h3>Características</h3>
+            <ul>
+                <li>Aislamiento Térmico: La mayoría de los termos cuentan con aislamiento al vacío, lo que les permite
+                    mantener las bebidas calientes durante varias horas (generalmente entre 6 y 12 horas) y frías por
+                    igual.</li>
+                <li>Materiales Duraderos: Suelen estar fabricados en acero inoxidable, lo que les brinda resistencia a
+                    impactos, óxido y manchas, asegurando una larga durabilidad.</li>
+                <li>Diseño Ergonómico: Muchos termos tienen tapas que se pueden abrir con una sola mano y bocas anchas
+                    que facilitan el llenado y la limpieza, así como un diseño que permite un agarre cómodo. </li>
+                <li>Capacidad Variada: Vienen en diferentes tamaños, desde modelos compactos para llevar en el bolso
+                    hasta opciones más grandes para viajes o actividades al aire libre.</li>
+            </ul>
+            <h3>Garantía</h3>
+            <p> La garantía de los termos ofrece una cobertura de 1 a 2 años que cubre defectos de fabricación. Es
+                recomendable revisar las condiciones específicas al momento de la compra para entender qué está cubierto
+                y seguir las instrucciones de uso y cuidado para maximizar la durabilidad del termo.</p>
+        </div>
+    </div>
+
+
+    <!-- Modal del carrito -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: <span id="cartTotal">0</span> COP</p>
+            <h3>Método de Pago</h3>
+            <form id="payment-form">
+                <label for="nequi-phone">Número de Nequi:</label>
+                <input type="text" id="nequi-phone" placeholder="Ingresa tu número de Nequi" required>
+                <button type="submit">Pagar</button>
+            </form>
+            <div id="payment-message"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://x.com/BODYFIT19946142?t=8oDmS1Cwz2d22VsPVWPBpw&s=08" target="_blank" class="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/body_fit04/profilecard/?igsh=MWswdGd4YXJrc2lpNQ==" target="_blank"
+                class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/message/KIMQYZMVAUD6I1" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
